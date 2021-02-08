@@ -1,2 +1,0 @@
-com/example/hello_selenium_junit/RobobarRemoteTest.java
- com.example.hello_selenium_junit.RobobarRemoteTest
