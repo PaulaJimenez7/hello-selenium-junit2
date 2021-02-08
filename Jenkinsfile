@@ -7,6 +7,13 @@ pipeline {
     }
 
     stages { 
+        stage('build') {
+            steps {
+                withGradle{
+                    sh './gradlew assemble'
+                }              
+            }
+        }
         stage('test') {
             steps {
                 withGradle{
