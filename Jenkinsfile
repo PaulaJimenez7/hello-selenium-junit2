@@ -26,7 +26,7 @@ pipeline {
                     junit 'build/test-results/test/TEST-*.xml'
                     recordIssues(
                         enabledForFailure: true,
-                        tool: checkStyle(pattern:build/reports/checkstyle/*.xml)
+                        tool: checkStyle(pattern:'build/reports/checkstyle/*.xml')
                     )
                 }
             }
